@@ -9,3 +9,8 @@ const elements = jQuery(".text");
 elements.each(function () {
   console.log(jQuery(this).text());
 });
+
+const elements = jQuery(".text");
+elements.each(function () {
+  console.log(jQuery(this).text());
+});
