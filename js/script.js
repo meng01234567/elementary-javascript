@@ -17,17 +17,34 @@
 
 // jQuery("#js-section").children("p").css("color", "blue");
 
-// クラス追加
-jQuery("#js-btn").addClass("btn-register");
+// // クラス追加
+// jQuery("#js-btn").addClass("btn-register");
 
-// クラス削除
-jQuery("#js-register").removeClass("btn-register");
+// // クラス削除
+// jQuery("#js-register").removeClass("btn-register");
 
-// CSSプロパティーの設定
-jQuery("#js-title").css({
-  color: "red",
-  fontSize: "80px",
-});
-// jQuery("#js-title").text("Daily traial");
-const title = jQuery("#js-title").text();
-alert(title);
+// // CSSプロパティーの設定
+// jQuery("#js-title").css({
+//   color: "red",
+//   fontSize: "80px",
+// });
+// // jQuery("#js-title").text("Daily traial");
+// const title = jQuery("#js-title").text();
+// alert(title);
+
+// jQuery("#js-title").css("color", "red");
+// jQuery("#js-title").text("Daily trial");
+// jQuery("#js-title").css("color", "red").text("Daily trial");
+
+// .fadeIn() フワッと表示。
+// jQuery("#js-title").fadeIn(1500);
+// .fadeOut() フワッと消える。
+
+// jQuery("#js-btn").fadeOut(1500);
+
+// .slideDown() スライドして表示。
+jQuery("#js-title").slideDown(1500);
+
+// .slideUp() スライドして消える。
+
+jQuery("#js-btn").slideUp(1500);
