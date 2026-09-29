@@ -42,9 +42,23 @@
 
 // jQuery("#js-btn").fadeOut(1500);
 
-// .slideDown() スライドして表示。
-jQuery("#js-title").slideDown(1500);
+// // .slideDown() スライドして表示。
+// jQuery("#js-title").slideDown(1500);
 
 // .slideUp() スライドして消える。
 
-jQuery("#js-btn").slideUp(1500);
+// jQuery("#js-btn").slideUp(1500);
+
+// jQuery("セレクタ").on("イベント名", function () {});
+jQuery("#js-btn").on("click", function () {
+  jQuery("#js-title").text("Daily trial");
+});
+
+jQuery("#js-title").on({
+  mouseenter: function () {
+    jQuery("#js-title").css("color", "red");
+  },
+  mouseleave: function () {
+    jQuery("#js-title").css("color", "black");
+  },
+});
