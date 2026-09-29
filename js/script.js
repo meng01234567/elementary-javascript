@@ -50,15 +50,26 @@
 // jQuery("#js-btn").slideUp(1500);
 
 // jQuery("セレクタ").on("イベント名", function () {});
-jQuery("#js-btn").on("click", function () {
-  jQuery("#js-title").text("Daily trial");
-});
+// jQuery("#js-btn").on("click", function () {
+//   jQuery("#js-title").text("Daily trial");
+// });
 
-jQuery("#js-title").on({
-  mouseenter: function () {
-    jQuery("#js-title").css("color", "red");
-  },
-  mouseleave: function () {
-    jQuery("#js-title").css("color", "black");
-  },
+// jQuery("#js-title").on({
+//   mouseenter: function () {
+//     jQuery("#js-title").css("color", "red");
+//   },
+//   mouseleave: function () {
+//     jQuery("#js-title").css("color", "black");
+//   },
+// });
+//JavaScriptからクリックしてデイトラのページに遷移すれば成功！
+// document.querySelector("#js-register").click();
+
+//イベント監視
+// window.onload = function () {
+//   alert("読み込みが完了");
+// };
+
+document.querySelector("#js-btn").addEventListener("click", function () {
+  alert("クリックされました。");
 });
